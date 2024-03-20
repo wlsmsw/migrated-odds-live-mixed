@@ -1,0 +1,915 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+/* Custom Defaults */
+body,html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #fff;
+  font: 100%/87.5% 'Roboto', Arial, sans-serif;
+  background: #111;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+ul, li, ul li, ol li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+/* Styles */
+
+.content-wrapper {    
+  min-height: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.sports-ul {
+  height: 90%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.sports-ul li {
+  height: 6.68724279835391%;
+}
+
+.sports-ul li.league-container {
+  height: auto;
+}
+
+.sports-ul li.no-market {
+  height: 93.31275720164609%;
+  background: #111;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  position: absolute;
+  z-index: 9999;
+}
+
+.sports-ul li.no-market h1{
+  font-weight: 400;  
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sports-header {
+  color: #fff;
+  width: 100%;
+  height: 6%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sports-header  h1 {
+  display: inline-block;
+}
+
+.league-title {
+  background: #111;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.sports-header h1,
+.league-title h1{
+  /*color: #000;*/
+  font-size: 3.75vh;
+  line-height: 1.55;
+  font-weight: normal;
+  /*width: 60%;*/
+}
+
+.scores-container span.team-name {
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+
+.ul-league {
+  overflow: hidden;
+}
+
+.sports-1 {
+  height: 50px;
+  width: 100%;
+}
+
+.content li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+li.match-container {
+  height: 13.580246913580247%;
+  /*background: #262626;*/
+  width: 100%;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  overflow: hidden;
+  position: relative;
+}
+
+li.match-container:first-of-type {
+  margin-top: 12px;
+}
+
+.scores-container {
+  color: #000;
+  width: 41.5%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+}
+
+.scores-container p {
+  margin: 0 12px;
+  height: 50%;
+  display: block;
+  overflow: hidden;
+}
+
+.scores-container span.team-name {
+  text-align: left;
+  float: left;    
+  width: 13%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;  
+  position: absolute;
+}
+
+.scores-container p:last-child {
+  border-top: 2px solid #ff5600;
+}
+
+.scores-container span {
+  font-size: 2.5vh;
+  line-height: 2.3;
+  margin: -1vh 1%;
+  display: inline-block;  
+}
+
+.scores-container span.final-score {
+  /*color: #fff;*/
+  font-size: 3.75vh;
+  line-height: 1.55;
+  width: 12%;
+  /*text-align: right;*/
+  /*margin-left: 6%;*/
+}
+
+.scoreset-cont,
+.scoreheaderset-cont{  
+  /*width: 32%;*/
+  width: 82%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 33% !important;
+}
+
+.scoreset-cont span,
+.scoreheaderset-cont span{    
+  margin: 0;
+  width: 8vh;
+  text-align: center;
+}
+
+.scoreset-cont span.baseball-score,
+.scoreheaderset-cont span.baseball-score{    
+  width: 4.6vh !important;
+}
+
+.scores-container span.scores_set {
+  color: #ff5600;
+}
+
+.odds-selection {
+  color:  #000;
+  width: 58%;
+  display: inline-block;
+  float: right;
+  height: 100%;
+  position: absolute;
+}
+
+.odds-draw,
+.draw-price,
+.odds-team1,
+.odds-team2,
+.odds-draw,
+.odds-price1,
+.odds-price2,
+.market-date {    
+  font-size: 3vh;
+  line-height: .9;
+  height: 90%;
+  letter-spacing: -0.015em;
+}
+
+.odds-container {
+  display: inline-block;
+  float: left;
+  margin-right: 1%;
+  margin-left: 2%;
+  width: 46.5%;
+  height: 5vh;
+}
+
+.four-odds {
+    height: 3vh;
+    margin-bottom: .5vh;
+}
+
+.four-odds span {
+    font-size: 2.5vh;
+    line-height: 0.5;
+}
+
+.team-container,
+.draw-container {
+  color: #FFF;
+  float: left;
+  width: 78%;
+  background-color: #000;
+  height: 100%;
+  
+  -ms-transform: skewX(-20deg); 
+  -webkit-transform: skewX(-20deg); 
+  transform: skewX(-20deg);
+  outline: 1px solid transparent;
+}
+
+.odds-team-draw {
+  float: left;
+  margin-left: 2%;
+  
+  -ms-transform: skewX(20deg); 
+  -webkit-transform: skewX(20deg); 
+  transform: skewX(20deg);
+  outline: 1px solid transparent;
+  
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 97%;
+}
+
+.price-container-draw,
+.price-container {
+  background: #fa9a21;
+  color: #fff;
+  display: inline-block;
+  float: right;
+  width: 22%;
+  height: 100%;
+  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  -ms-transform: skewX(-20deg); 
+  -webkit-transform: skewX(-20deg); 
+  transform: skewX(-20deg);
+  outline: 1px solid transparent;
+}
+
+.odds-team1,
+.odds-team2,
+.odds-draw {
+  float: left;
+  margin-left: 4%;
+  margin-top: 1%;
+  font-weight: bold;
+  
+  -ms-transform: skewX(20deg); 
+  -webkit-transform: skewX(20deg); 
+  transform: skewX(20deg);
+  outline: 1px solid transparent;
+  
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 97%;
+}
+
+.draw-price,
+.odds-price1,
+.odds-price2 {
+  float: right;
+  width: 100%;
+  margin-top: 3.5%;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  font-weight: bold;
+
+  -ms-transform: skewX(20deg); 
+  -webkit-transform: skewX(20deg); 
+  transform: skewX(20deg);
+  outline: 1px solid transparent;
+}
+
+
+.market-date::before,
+.market-date::after,
+.odds-price1::before,
+.odds-price2::before,
+.odds-price1::after,
+.odds-price2::after,
+.odds-draw::before,
+.odds-draw::after,
+.odds-draw::before,
+.odds-draw::after,
+.draw-price::before,
+.draw-price::after,
+.odds-team1::before,
+.odds-team2::before,
+.odds-team1::after ,
+.odds-team2::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 24%;
+}
+
+.odds-selection h1 {
+  /*
+  display: block;
+  width: 100%;
+  height: 40%;
+  font-size: 2.5vh;
+  text-align: center;
+  line-height: 1.75;
+  font-weight: 400;
+  */
+  display: block;
+  width: 100%;
+  height: 5.5vh;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.5vh;
+  line-height: 1.9;
+  font-weight: 400;
+}
+
+.odds-selection > h1 > span {
+  background: #ed1b25;
+  padding: 0px 10px;
+  color: #eee;
+  border-radius: 4px;
+  margin-left: 3vh;
+}
+
+.odds-selection.draw > .odds-container{
+  width: 37%;
+}
+
+.odds-selection.draw > .odds-container > .price-container {
+  width: 28%;
+}
+
+.odds-selection.draw > .odds-container > .team-container {
+  width: 72%;
+}
+
+.odds-selection.draw > .odds-container:nth-of-type(2){
+  width: 16%;
+}
+
+.odds-selection.draw > .odds-container:nth-of-type(2) > .draw-container {
+  width: 54%;
+}
+
+.odds-selection.draw > .odds-container:nth-of-type(2) > .price-container {
+  width: 46%;
+}
+
+.odds-draw {
+  margin-left: 10%;
+}
+
+/* Sports BG */
+.bg-soccer,
+.bg-football {
+  background: #3bb722;
+}
+
+.bg-tennis {
+  background: #239ad1;
+}
+
+.bg-basketball {
+  background: #ef4e23;
+}
+
+.bg-baseball {
+  background: #144a9a;
+}
+
+.bg-icehockey {
+  background: #25c5c3;
+}
+
+.bg-volleyball {
+  background: #8415bb;
+}
+
+.bg-handball {
+  background: #0b4c6e;
+}
+
+.bg-americanfootball {
+  background: #a65629;
+}
+
+/*additional*/
+
+.bg-cricket {
+  background: #bf2626;
+}
+
+.bg-aussierules {
+  background: #ccaf1f;
+}
+
+.bg-rugby{
+  background: #2e9975;
+}
+
+.bg-badminton{
+  background: #575757;
+}
+
+.bg-beachvolleyball{
+  background: #857563;
+}
+
+.bg-snooker{
+  background: #6699FF;
+}
+
+.bg-golf{
+  background: #5B721C;
+}
+
+.bg-motorsports,
+.bg-formula1{
+  background: #2C7E42;
+}
+
+.bg-darts{
+  background: #6B2D2A;
+}
+
+.bg-wintersports{
+  background: #A85F94;
+}
+
+.bg-cycling{
+  background: #C63065;
+}
+
+.bg-boxing{
+  background: #DF5F5F;
+}
+
+.bg-tabletennis{
+  background: #9772ff;
+}
+
+.bg-squash{
+  background: #b8a800;
+}
+
+.ul-soccer .scores-t-1 {
+  border-color: #3bb722 !important;
+}
+
+.ul-basketball .scores-t-1 {
+  border-color: #ef4e23 !important;
+}
+
+.ul-football .scores-t-1 {
+  border-color: #3bb722 !important;
+}
+
+.ul-tennis .scores-t-1 {
+  border-color: #239ad1 !important;
+}
+
+.ul-volleyball .scores-t-1 {
+  border-color: #239ad1 !important;
+}
+
+.ul-baseball .scores-t-1 {
+  border-color: #144a9a !important;
+}
+
+.ul-icehockey .scores-t-1 {
+  border-color: #25c5c3 !important;
+}
+
+.ul-americanfootball .scores-t-1 {
+  border-color: #a65629 !important;
+}
+
+.ul-handball .scores-t-1 {
+  border-color: #0b4c6e !important;
+}
+
+.ul-beachvolleyball .scores-t-1 {
+  border-color: #857563 !important;
+}
+
+/* Icons */
+
+.icon {
+  display: inline-block; 
+  height: 34px;
+  width: 34px;
+  vertical-align: middle;
+  margin-top: -9px;
+  margin-right: 8px
+}
+
+.basketball {
+  background: url(../img/icon-basketball.png) no-repeat center center;
+}
+
+.tennis {
+  background: url(../img/icon-tennis.png) no-repeat center center;
+}
+
+.soccer,
+.football {
+  background: url(../img/icon-soccer.png) no-repeat center center;
+}
+
+.volleyball {
+  background: url(../img/icon-volleyball.png) no-repeat center center;
+}
+
+.beachvolleyball {
+  background: url(../img/icon-volleyball.png) no-repeat center center;
+}
+
+.baseball {
+  background: url(../img/icon-baseball.png) no-repeat center center;
+}
+
+.icehockey {
+  background: url(../img/icon-ice-hockey.png) no-repeat center center;
+}
+
+.cricket {
+  background: url(../img/icon-cricket.png) no-repeat center center;
+}
+
+.americanfootball {
+  background: url(../img/icon-amfb.png) no-repeat center center;
+}
+
+.aussierules {
+  background: url(../img/icon-aussie-rules.png) no-repeat center center;
+}
+
+.rugby{
+  background: url(../img/icon-rugby.png) no-repeat center center;
+}
+
+.handball {
+  background: url(../img/icon-handball.png) no-repeat center center;
+}
+
+.badminton {
+  background: url(../img/icon-badminton.png) no-repeat center center;
+}
+
+.snooker {
+  background: url(../img/icon-snooker.png) no-repeat center center;
+}
+
+.golf {
+  background: url(../img/icon-golf.png) no-repeat center center;
+}
+
+.motorsports {
+  background: url(../img/icon-motorsports.png) no-repeat center center;
+}
+
+.darts {
+  background: url(../img/icon-darts.png) no-repeat center center;
+}
+
+.wintersports {
+  background: url(../img/icon-wintersports.png) no-repeat center center;
+}
+
+.cycling {
+  background: url(../img/icon-cycling.png) no-repeat center center;
+}
+
+.boxing {
+  background: url(../img/icon-mma-boxing.png) no-repeat center center;
+}
+
+.tabletennis {
+  background: url(../img/icon-table-tennis.png) no-repeat center center;
+}
+
+.squash {
+  background: url(../img/icon-squash.png) no-repeat center center;
+}
+
+
+/* Scroll To Fixed SPACER */
+ .c-spacer {
+  height: 55px !important;
+}  
+ .clast-spacer:last-of-type {
+  height: 0px !important;
+}  
+
+.league-1-1:first-child h1 {
+  line-height: 1.75;
+}
+
+/* Footer:: News Ticker */
+
+.foot-ticker {
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 10%;
+    background-color: #000;
+}
+
+.foot-container {
+    background-color: #000;
+    position: relative;
+    border: 0px solid #f00;
+}
+
+#clock-ticker {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0px solid #0f0;
+    height: 55px;
+    background: transparent url('../img/clock-bg.png') no-repeat top left;
+    padding: 5px 0px 0px 35px;
+    text-transform: uppercase;
+}
+
+.foot-ticker-msw {
+    height: 62px;
+    background-color: #333;
+}
+
+.market-date::nth-letter(3) {
+    color: red!important;font-family: "Comic Sans MS";
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.tickercontainer { /* the outer div with the black border */
+  border: 0px solid #000;
+  background: transparent; 
+  height: 50px; 
+  overflow: hidden; 
+  padding-top: 10px;
+}
+.tickercontainer .mask { /* that serves as a mask. so you get a sort of padding both left and right */
+  position: relative;
+  left: 10px;
+  top: 8px;
+  overflow: hidden;
+}
+
+ul.newsticker { /* that's your list */
+  position: relative;
+  left: 50px;
+  list-style-type: none;
+  overflow:hidden;
+}
+
+ul.newsticker li {
+/* important: display inline gives incorrect results when you check for elem's width */
+  font-family:Verdana , Arial,Tahoma,'MyriadPro BoldCond';
+  font-size: 36px;
+  font-weight:bold;
+  color:#262525;
+  padding-left: 80px;padding-right: 50px;
+  display: block;
+  float: left;
+}
+
+ul.newsticker li b,
+ul.newsticker li strong {
+  color:#ed0000;
+}
+
+ul.newsticker span {
+  margin: 0 10px 0 0;
+} 
+
+ul.newsticker {
+  top: 7px;
+}
+    
+.foot-ticker{
+  position:absolute;
+  bottom: 0px;
+  width:100%;
+  height: 62px;
+  background-color:#bbb;
+  background: transparent;
+}
+.foot-container{background:transparent url('../img/news-bg.png') repeat-x top left ;position:relative;border:0px solid #f00;height:100px;}
+#news-ticker{margin: 0px 232px 10px 427px;border: 0px solid #0f0;height:62px;display:block;}
+#news-ticker #news-ticker-list li{font-family: "Roboto  Condensed";text-transform:uppercase;color:#fff;font-size: 38px}
+#clock-ticker{z-index:1;position:absolute;top:0;right:0;border: 0px solid #0f0;height:55px; 
+  background: transparent url('../img/clock-bg.png') no-repeat top left;
+  padding: 5px 0px 0px 31px;text-transform:uppercase;
+}
+.clock-digit,.clock-date{font-family: "Roboto"; font-weight: unset; font-size: 39px;color:#111;margin-top: 0px;}
+
+.clock-date{width:220px;display:block;text-align:left;}
+.clock-digit{width:220px;display:block;text-align:left;}
+
+
+.foot-ticker-msw{
+  position:absolute;
+  top: 0;
+  left:0px;
+  width:349px;
+  height: 66px;
+  z-index:1;
+  background: transparent url('../img/msw-ticker-logo-new.png') no-repeat top left;
+  text-align:left!important;
+}
+
+.smarticker5{height:53px;float: left;width: 87%;  border-top: 4px solid #222;border-bottom: 4px solid #222;}
+ 
+ 
+
+/* Font Face */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/roboto.woff2') format('woff2'),
+       url('fonts/roboto.woff') format('woff'); 
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url('fonts/roboto-light.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/roboto-bold.woff2') format('woff2'); 
+}
+
+
+
+/**
+* additional style
+*/
+body {
+    background: #fff;
+}
+.header {
+    height: auto;
+}
+.header-main {
+    background: #e6e6e6;
+    padding: 1rem 2rem;
+    text-align: left;
+    position: relative;
+}
+.header-main .logo {
+    display: inline-block;
+}
+.header-main .logo img {
+    width: 100px;
+}
+.header-main .date {
+    color: #000;
+    font-size: 3vh;
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+}
+.header-main .date #clock-ticker {
+    position: unset;
+    height: auto;
+    background: none;
+    padding: 0;
+    display: inline-block;
+}
+.header-main .date #clock-ticker .clock-digit {
+    width: auto;
+    font-size: 3vh;
+    color: #000;
+    font-family: inherit;
+    margin: 0;
+}
+.header-inner {
+    background: #000000;
+    text-align: left;
+    padding: .5rem 2rem;
+    line-height: 1;
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+.header-inner .title {
+    display: inline-block;
+    font-size: 4vh;
+    font-weight: 700;
+    width: 100%;
+
+}
+.header-inner .title span {
+    background: #ed1b25;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+.header-inner .sport-label {
+    display: inline-block;
+    float: right;
+}
+
+.market-title-header {
+  position: absolute;
+  bottom: 0;
+  display: inline-block !important;
+  float: right;
+}
+
+.current-quarter {
+  display: inline-block !important;
+  float: left;
+}
+
+/*.score-header{
+  border-spacing:10px;
+  position:relative;
+}
+
+.score-header:after {
+    border: 2px solid black;
+    border-radius: 5px 5px 5px 5px;
+    position: absolute;
+}*/
+
+
+.score-header {
+    float: unset !important;
+    display: inline-block;
+    line-height: 3vh !important;
+    width: 3vh !important;
+    border: 2px solid black;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 2vh !important;
+}
+
+.final-score {
+    line-height: 6vh !important;
+    font-size: 2.5vh !important;
+    font-weight: bold;
+}
+
+li.match-container:nth-child(n+3) {
+    border-top: 2px solid #000;
+    padding-top: 2vh;
+}
