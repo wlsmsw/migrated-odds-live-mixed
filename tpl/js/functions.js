@@ -41,6 +41,10 @@
     {
       $('#not_ready').show(); 
     }
+    if (msg == "NOCONTENT")
+    {
+      $('#no_content').show(); 
+    }
   }
 
 

@@ -17,7 +17,6 @@
 		    data: 'sport=<?php echo $data['sport']; ?>',
         
         success: function(data) {
-          // console.log(data);
           var start = new Date().getTime(); 
           if(typeof(data) != "undefined" && data !== null) 
           {
@@ -31,6 +30,13 @@
               var keys = Object.keys(obj);
               myids = obj.myids; // get all active match ids
               delete obj.myids;  // unset ids in main array
+              
+              if(Object.keys(myids.sports).length <= 0){
+                  displayNotFound("NOCONTENT");
+                  return false;
+              }else{
+                  $('#no_content').hide(); 
+              }
                 
               // this is the function to work with
               var league_list = [];
@@ -726,11 +732,14 @@
   <link rel="stylesheet" type="text/css" href="tpl/css/style.css">
 </head>
 <body>
-  <div class="row content-row" id="no_result" style="display:none" align="center">
+  <div class="row content-row" id="no_result" style="display:none;color:black" align="center">
     <h2><br /> UNRECOGNIZED REQUESTED SPORT </h2>
   </div>
-  <div class="row content-row" id="not_ready" style="display:none" align="center">
+  <div class="row content-row" id="not_ready" style="display:none;color:black" align="center">
     <h2><br /> ALL SPORT VIEWING NOT READY YET </h2>
+  </div>
+  <div class="row content-row" id="no_content" style="display:none;color:black" align="center">
+    <h2><br /> CURRENTLY NO AVAILABLE LIVE ODDS </h2>
   </div>
   <div class="content-wrapper" style="position: relative; height: 1061px; overflow: hidden;">
   <ul class="sports-ul" style="margin: 0px; position: absolute; top: 0px;">
