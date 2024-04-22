@@ -62,11 +62,13 @@
                   
                 var partofarray = 0;
             
+                /*
+                --disable restriction in leagues
                 for (let k=0; k<allowed_leagues.length; k++){
                     if((keys[j].indexOf(allowed_leagues[k]) !== -1)&&(keys[j].indexOf("basketball") !== -1)){
                         partofarray++;
                     }
-                }
+                }*/
                 
                 if(partofarray > 0){
                     in_leagues.push(keys[j]);
