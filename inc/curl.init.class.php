@@ -3,6 +3,7 @@
 /**
  * @desc: communicate with the LVS API
  */
+#[\AllowDynamicProperties]
 class reqAPI
 {
 

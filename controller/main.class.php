@@ -5,7 +5,8 @@ Author: MSW WebDev
 Version: 1.0
 */
 
-class Site extends Config 
+#[\AllowDynamicProperties]
+class Site extends Config
 {
 
 	public $request;

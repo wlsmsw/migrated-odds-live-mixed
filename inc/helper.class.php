@@ -5,7 +5,8 @@
  */
 
 // custom Exception class
-class customException extends Exception 
+#[\AllowDynamicProperties]
+class customException extends Exception
 {
 	public function errorMessage() 
 	{

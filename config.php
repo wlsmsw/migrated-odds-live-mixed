@@ -50,7 +50,8 @@ require('inc/curl.init.class.php');
 require('inc/liveapi.class.php');
 require('controller/main.class.php');
 
-class Config 
+#[\AllowDynamicProperties]
+class Config
 {
 
     public  $environment;
