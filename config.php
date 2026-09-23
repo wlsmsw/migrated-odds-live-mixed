@@ -147,6 +147,7 @@ class Config
 
       try 
       {
+         mysqli_report(MYSQLI_REPORT_OFF); // for PHP 8.1+ which throws on query failure
          $this->db_conn = new mysqli('p:'.$this->db_host, $this->db_username, $this->db_password, $this->db_name);
          if (mysqli_connect_errno())
          {
